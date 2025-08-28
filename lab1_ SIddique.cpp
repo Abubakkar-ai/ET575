@@ -5,6 +5,7 @@ Lab 1, iostream
 */
 
 #include <iostream>
+#include <cmath> // Needed for round function
 using namespace std;
 
 int main()
@@ -27,33 +28,39 @@ int main()
     char sym = '%';
     float distance = 5.63;
     double d = 8.9;
-int i = static_cast<int>(std::round(d)) // i will be 9;
-
+    int i = static_cast<int>(round(d)); // i will be 9
 
     cout << "Given symbol = " << sym << endl;
     cout << "Given distance = " << distance << endl;
-    cout << "Given number = " <<  << endl;
-    cout << "Given number = " << number << endl;
+    cout << "Given number = " << i << endl;
 
     cout << "----- EXERCISE -----" << endl;
+
     // declare variables
-    string name;
-    int age;
-    float gpa;
+    string country;
+    char gender;
+    int zipcode;
+    float rate;
 
     // collect data
-    cout << "Enter your name: ";
-    cin >> name;
-    cout << "Enter your age: ";
-    cin >> age;
-    cout << "Enter your GPA: ";
-    cin >> gpa;
+    cout << "Enter your country: ";
+    cin >> country;
+
+    cout << "Enter your gender (f = female, m = male, o = other): ";
+    cin >> gender;
+
+    cout << "Enter your zip code: ";
+    cin >> zipcode;
+
+    cout << "Enter the tax rate: ";
+    cin >> rate;
 
     // print the result
-    cout << "\n--- Student Info ---" << endl;
-    cout << "Name: " << name << endl;
-    cout << "Age: " << age << endl;
-    cout << "GPA: " << gpa << endl;
+    cout << "\n--- Collected Info ---" << endl;
+    cout << "Entered country:\t" << country << endl;
+    cout << "Selected gender:\t" << gender << endl;
+    cout << "Zip code:\t\t" << zipcode << endl;
+    cout << "Tax rate:\t\t" << rate << endl;
 
     return 0;
 }
