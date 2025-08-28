@@ -1,5 +1,5 @@
 /*
-Student's full name
+ABU Siddique
 Aug 27, 2025
 Lab 1, iostream
 */
@@ -26,11 +26,34 @@ int main()
     // declare variable
     char sym = '%';
     float distance = 5.63;
-    int number = 8;
+    double d = 8.9;
+int i = static_cast<int>(std::round(d)) // i will be 9;
+
 
     cout << "Given symbol = " << sym << endl;
     cout << "Given distance = " << distance << endl;
+    cout << "Given number = " <<  << endl;
     cout << "Given number = " << number << endl;
+
+    cout << "----- EXERCISE -----" << endl;
+    // declare variables
+    string name;
+    int age;
+    float gpa;
+
+    // collect data
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "Enter your GPA: ";
+    cin >> gpa;
+
+    // print the result
+    cout << "\n--- Student Info ---" << endl;
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "GPA: " << gpa << endl;
 
     return 0;
 }
