@@ -59,5 +59,31 @@ int main() {
     cout<<" is number1 equale to number2? "<<(number1 ==number2)<<endl;
     cout<<"ios number1 greater than number2? "<<(number1 > number2)<<endl;
     cout<<"is number1 less then number2? "<<(number1 != number2)<<endl;
+
+    cout<< "-- example 4: logical operator" << endl;
+    // And operator
+    bool check_numbers =(number1 != number2) && (number1 < number2) && (number1>5);
+    // number1 != number2 --> true
+    //number1   < number2 --> true
+    //number1<5 --> false
+    //check_number = true && true && false =false
+    cout<<"The result of check_number is "<<check_numbers<<endl;
+
+
+        // OR operator
+        bool check_or = (number2 > 10) || (number2 != 3) || (number2<number1);
+        // number2 > 10 --> false
+        // number2 != 3 --> true
+        //number2<number1 ---> false
+        //false || trye || false = true
+        cout<<"the result of check numberis "<<check_or<<endl;
+        cout<< "-- example 5: casting -----" << endl; 
+        int n= 5;
+        float m =n/2.0 ;
+
+        cout<<"implicit casting = "<<m/2<<endl;
+
+        cout<<"\n--- Exercise ----"<<endl;
+        
     return 0;
 }
